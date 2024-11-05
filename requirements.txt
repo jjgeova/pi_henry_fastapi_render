@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+jupiter
+fastapi
+unicorn
+pyarrow
+fastparquet
+unidecode
+datetime

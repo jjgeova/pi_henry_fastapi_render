@@ -9,3 +9,5 @@ pyarrow
 fastparquet
 unidecode
 datetime
+Response
+HTTPException

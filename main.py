@@ -18,7 +18,7 @@ if __name__ == "__main__":
 # df = pd.read_parquet('data.parquet')  # Asegúrate de que el archivo esté en el mismo directorio o proporciona la ruta correcta
 # df['release_date'] 
 
-df = pd.read_csv('data.csv')
+df = pd.read_csv('Dataset/data_movies.csv')
 #print(df['release_date'])
 df['release_date'] = pd.to_datetime(df['release_date'], errors='coerce')
 df['release_year'] = df['release_date'].dt.year  # Extraer el año de la fecha

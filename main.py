@@ -5,6 +5,8 @@ import numpy as np
 import uvicorn
 from unidecode import unidecode
 
+import modelo as ml
+
 app = FastAPI()
 
 if __name__ == "__main__":
@@ -155,7 +157,7 @@ async def obtener_votos_titulo(titulo_de_la_filmacion: str):
 
 @app.get("/recomendacion/{titulo}")
 async def obtener_recomendacion(titulo: str):
-    resultado = ml3.recomendacion(titulo)
+    resultado = ml.recomendacion(titulo)
     if isinstance(resultado, str):
         raise HTTPException(status_code=404, detail=resultado)
     return Response(content=", ".join(resultado), media_type="text/plain")

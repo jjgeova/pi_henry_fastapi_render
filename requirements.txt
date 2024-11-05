@@ -3,7 +3,6 @@ numpy
 matplotlib
 seaborn
 scikit-learn
-jupiter
 fastapi
 unicorn
 pyarrow

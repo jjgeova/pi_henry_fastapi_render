@@ -4,7 +4,7 @@ matplotlib
 seaborn
 scikit-learn
 fastapi
-unicorn
+uvicorn
 pyarrow
 fastparquet
 unidecode

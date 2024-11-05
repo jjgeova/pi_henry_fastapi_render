@@ -4,8 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import StandardScaler
 
 # Cargamos el Data Frame con el origen o fuente de los datos (archivo CSV)
-df_original = pd.read_csv('Dataset/data_recomienda.csv')
-
+df = pd.read_csv('Dataset/data_recomienda.csv')
 
 #Vectorizar la descripción para calcular similitud
 #vectorizer = TfidfVectorizer()
